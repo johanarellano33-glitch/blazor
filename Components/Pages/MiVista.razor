@@ -1,0 +1,77 @@
+﻿@page "/MiVista"
+@using xx.Components.Data
+@inject Servicios.ServicioControlador ServicioControlador
+@rendermode InteractiveServer
+
+@inject Servicios.ServicioControlador JuegosServicioControlador
+ 
+<h3>Juegos</h3>
+ 
+<div>
+<label>
+<input type="checkbox" @bind="mostrarNoJugados" />
+
+        Mostrar solo juegos no jugados
+</label>
+</div>
+ 
+<ul>
+
+    @foreach (var j in juegosFiltrados)
+
+    {
+<li>
+            @j.Nombre
+            @(j.Jugado ? "(Jugado)" : "(Pendiente)")
+<input type="checkbox" checked="@j.Jugado" @onclick="() => CambiarJugado(j)" />
+</li>
+
+    }
+</ul>
+ 
+<div>
+<input @bind="newJuego.Nombre" placeholder="Agregar juego" />
+<button @onclick="AgregarJuego">Agregar juego</button>
+</div>
+ 
+@code {
+
+    private List<Juego> juegos = new();
+    private List<Juego> juegosFiltrados =>
+
+        mostrarNoJugados ? juegos.Where(j => !j.Jugado).ToList() : juegos;
+ 
+    private Juego newJuego = new();
+    private bool mostrarNoJugados = false;
+    private async Task CambiarJugado(Juego j)
+    {
+        j.Jugado = !j.Jugado;
+        Console.WriteLine($"Estado cambiado: {j.Nombre} → {(j.Jugado ? "Jugado" : "Pendiente")}");
+        await JuegosServicioControlador.ActualizarJuego(j);
+    }
+ 
+    private async Task AgregarJuego()
+    {
+        if (!string.IsNullOrWhiteSpace(newJuego.Nombre))
+
+        {
+            await JuegosServicioControlador.AgregarJuego(newJuego);
+
+            juegos = await JuegosServicioControlador.ObtenerJuegos();
+
+            newJuego = new Juego();
+
+        }
+
+    }
+ 
+    protected override async Task OnInitializedAsync()
+
+    {
+
+        juegos = await JuegosServicioControlador.ObtenerJuegos();
+
+    }
+
+}
+ 
