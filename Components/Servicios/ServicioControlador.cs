@@ -34,6 +34,9 @@ namespace xx.Components.Servicios
         {
             await _servicioJuegos.ActualizarJuego(juego);
         }
-
+        public async Task EliminarJuego(int identificador)
+        {
+            await _servicioJuegos.EliminarJuego(identificador);
+        }
     }
 }

@@ -20,12 +20,12 @@
     @foreach (var j in juegosFiltrados)
 
     {
-<li>
+        <li>
             @j.Nombre
             @(j.Jugado ? "(Jugado)" : "(Pendiente)")
-<input type="checkbox" checked="@j.Jugado" @onclick="() => CambiarJugado(j)" />
-</li>
-
+            <input type="checkbox" checked="@j.Jugado" @onclick="() => CambiarJugado(j)" />
+            <button @onclick="() => EliminarJuego(j.Identificador)">Eliminar</button>
+        </li>
     }
 </ul>
  
@@ -43,6 +43,12 @@
  
     private Juego newJuego = new();
     private bool mostrarNoJugados = false;
+
+    private async Task EliminarJuego(int identificador)
+    {
+        await JuegosServicioControlador.EliminarJuego(identificador);
+        juegos = await JuegosServicioControlador.ObtenerJuegos();
+    }
     private async Task CambiarJugado(Juego j)
     {
         j.Jugado = !j.Jugado;
@@ -62,6 +68,7 @@
             newJuego = new Juego();
 
         }
+
 
     }
  
