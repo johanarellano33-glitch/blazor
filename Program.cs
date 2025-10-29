@@ -1,3 +1,4 @@
+using Microsoft.Data.Sqlite;
 using xx.Components;
 using xx.Components.Data;
 using xx.Components.Servicios;
@@ -32,5 +33,15 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
+string ruta= "mibase.db";
+
+using var conexion = new SqliteConnection($"DataSource={ruta}");
+conexion.Open();
+var comando = conexion.CreateCommand();
+comando.CommandText = @"
+CREATE TABLE IF NOT EXISTS Juegos ( Identificador integer, nombre text, jugado integer )";  
+comando.ExecuteNonQuery();
+
 
 app.Run();
