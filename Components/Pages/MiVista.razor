@@ -33,16 +33,43 @@
 <input @bind="newJuego.Nombre" placeholder="Agregar juego" />
 <button @onclick="AgregarJuego">Agregar juego</button>
 </div>
+
+
+<div>
+    <label>
+        Buscar por nombre:
+        <input type="text" @bind="filtroBusqueda" @bind:event="oninput" placeholder="Escribe para buscar..." />
+    </label>
+</div>
  
 @code {
 
     private List<Juego> juegos = new();
-    private List<Juego> juegosFiltrados =>
+    private List<Juego> juegosFiltrados
+    {
+        get
+        {
+            var resultado = juegos.AsEnumerable();
 
-        mostrarNoJugados ? juegos.Where(j => !j.Jugado).ToList() : juegos;
+          
+            if (mostrarNoJugados)
+            {
+                resultado = resultado.Where(j => !j.Jugado);
+            }
+
+     
+            if (!string.IsNullOrWhiteSpace(filtroBusqueda))
+            {
+                resultado = resultado.Where(j => j.Nombre.Contains(filtroBusqueda, StringComparison.OrdinalIgnoreCase));
+            }
+
+            return resultado.ToList();
+        }
+    }
  
     private Juego newJuego = new();
     private bool mostrarNoJugados = false;
+    private string filtroBusqueda = "";
 
     private async Task EliminarJuego(int identificador)
     {
