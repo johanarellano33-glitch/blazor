@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|c:\\users\\m8-mq23-h\\desktop\\xx\\components\\pages\\mivista.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|solutionrelative:components\\pages\\mivista.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|c:\\users\\m8-mq23-h\\desktop\\xx\\components\\data\\serviciojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|solutionrelative:components\\data\\serviciojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|c:\\users\\m8-mq23-h\\desktop\\xx\\components\\servicios\\serviciocontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|solutionrelative:components\\servicios\\serviciocontrolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|c:\\users\\m8-mq23-h\\desktop\\xx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|c:\\users\\m8-mq23-h\\desktop\\xx\\components\\pages\\mivista.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|solutionrelative:components\\pages\\mivista.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|c:\\users\\m8-mq23-h\\desktop\\xx\\components\\data\\serviciojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|solutionrelative:components\\data\\serviciojuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|c:\\users\\m8-mq23-h\\desktop\\xx\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6475ADBD-935F-9CBE-11ED-FD08050B84ED}|xx.csproj|c:\\users\\m8-mq23-h\\desktop\\xx\\components\\data\\juego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,32 +30,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MiVista.razor",
               "DocumentMoniker": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\Components\\Pages\\MiVista.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\MiVista.razor",
               "ToolTip": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\Components\\Pages\\MiVista.razor",
               "RelativeToolTip": "Components\\Pages\\MiVista.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-27T21:23:21.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T21:20:03.904Z"
+              "WhenOpened": "2025-10-27T21:20:03.904Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -65,21 +66,23 @@
               "RelativeDocumentMoniker": "Components\\Servicios\\ServicioControlador.cs",
               "ToolTip": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\Components\\Servicios\\ServicioControlador.cs",
               "RelativeToolTip": "Components\\Servicios\\ServicioControlador.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwCcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T20:29:14.396Z"
+              "WhenOpened": "2025-10-27T20:29:14.396Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ServicioJuegos.cs",
               "DocumentMoniker": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\Components\\Data\\ServicioJuegos.cs",
               "RelativeDocumentMoniker": "Components\\Data\\ServicioJuegos.cs",
               "ToolTip": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\Components\\Data\\ServicioJuegos.cs",
               "RelativeToolTip": "Components\\Data\\ServicioJuegos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T20:14:01.545Z"
+              "WhenOpened": "2025-10-27T20:14:01.545Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -89,9 +92,10 @@
               "RelativeDocumentMoniker": "Components\\Data\\Juego.cs",
               "ToolTip": "C:\\Users\\M8-MQ23-H\\Desktop\\xx\\Components\\Data\\Juego.cs",
               "RelativeToolTip": "Components\\Data\\Juego.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T20:10:55.454Z"
+              "WhenOpened": "2025-10-27T20:10:55.454Z",
+              "EditorCaption": ""
             }
           ]
         }
